@@ -121,7 +121,7 @@ export default function SchemeFinderPage() {
           <div className="flex flex-col items-center text-center mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">Your Recommended Schemes</h1>
             <p className="text-lg text-gray-600 max-w-3xl">
-              Based on your profile, we've identified these schemes that you may be eligible for.
+              Based on your profile, we&apos;ve identified these schemes that you may be eligible for.
             </p>
             <Button onClick={() => setSchemes(null)} variant="outline" className="mt-4">
               Back to Overview
@@ -173,7 +173,7 @@ function SchemeCard({ scheme, delay }: { scheme: Scheme; delay: number }) {
             <p className="text-gray-700">{scheme.eligibility}</p>
           </div>
           <div>
-            <h4 className="text-sm font-medium text-gray-500 mb-1">Why It's Recommended</h4>
+            <h4 className="text-sm font-medium text-gray-500 mb-1">Why It&apos;s Recommended</h4>
             <p className="text-gray-700">{scheme.reason}</p>
           </div>
         </CardContent>

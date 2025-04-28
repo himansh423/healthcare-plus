@@ -44,7 +44,7 @@ export default function Navbar() {
               </span>
             </Link>
             <div className="hidden md:ml-10 md:flex md:space-x-8">
-              {["Home", "Hospitals", "Medicines"].map(
+              {["Home", "Hospitals",].map(
                 (item, index) => (
                   <Link
                     key={index}
@@ -55,6 +55,12 @@ export default function Navbar() {
                   </Link>
                 )
               )}
+              <Link
+                href={`/ai-scheme-finder`}
+                className="hover:text-primary px-3 py-2 text-sm font-medium text-[#0070f3]"
+              >
+                AI SCHEME FINDER
+              </Link>
               <Link
                 href={`/ask-ai`}
                 className="hover:text-primary px-3 py-2 text-sm font-medium text-[#0070f3]"
@@ -67,6 +73,7 @@ export default function Navbar() {
               >
                 AI RECOMMENDATION
               </Link>
+              
             </div>
           </div>
 

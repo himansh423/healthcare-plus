@@ -5,7 +5,7 @@ import Scheme from "@/library/modals/SchemeSchema";
 
 import { NextResponse } from "next/server";
 
-export async function GET(req: Request) {
+export async function GET() {
   try {
     await connectToDatabase();
     const schemes = await Scheme.find();
