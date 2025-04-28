@@ -147,7 +147,7 @@ const genAI = new GoogleGenerativeAI(apiKey as string);
 async function fetchUserData(userId: string): Promise<UserData> {
   try {
     const res = await axios.get<FetchUserDataResponse>(
-      `https://health-prototype.vercel.app/api/get-user-data/${userId}`
+      `https://healthcare-plus-nine.vercel.app/api/get-user-data/${userId}`
     );
     if (!res.data.success) {
       throw new Error("Failed to fetch user data");
